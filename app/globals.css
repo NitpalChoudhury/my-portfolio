@@ -934,3 +934,40 @@ body::before {
   text-shadow: 0 0 12px rgba(0, 200, 255, 0.7);
 }
 
+@media (max-width: 480px) {
+  .glass-contact {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-contact::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-contact {
+    padding: 12px !important;
+  }
+
+  .glass-info {
+    padding: 12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  @keyframes floatBox {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(0); }
+  }
+}
+
+@media (max-width: 480px) {
+  .glass-contact,
+  .glass-info,
+  form,
+  .contact-input {
+    max-width: 100% !important;
+  }
+}
