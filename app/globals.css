@@ -971,3 +971,43 @@ body::before {
     max-width: 100% !important;
   }
 }
+
+@media (max-width: 480px) {
+
+  /* Contact box fix */
+  .glass-contact {
+    padding: 14px !important;
+    border-radius: 12px !important;
+    margin: 0 10px !important;
+  }
+
+  /* Inner info box */
+  .glass-info {
+    padding: 14px !important;
+    border-radius: 12px !important;
+  }
+
+  /* Disable floating animations */
+  .glass-contact,
+  .glass-info {
+    animation: none !important;
+  }
+
+  /* Disable shine effect */
+  .glass-contact::after,
+  .glass-info::after {
+    display: none !important;
+  }
+
+  /* Input fields fix */
+  .contact-input {
+    padding: 10px !important;
+    font-size: 14px !important;
+  }
+
+  /* Button shrink */
+  .send-btn {
+    padding: 12px !important;
+    font-size: 15px !important;
+  }
+}
