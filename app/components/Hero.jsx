@@ -23,11 +23,17 @@ export default function Hero() {
 
       {/* Buttons */}
       <div className="flex gap-5 mt-8">
-        <button 
-        onClick={() => window.location.href = "/projects"}
-        className="px-8 py-3 rounded-xl neon-btn btn-shine">
-          View Portfolio
-        </button>
+        <button
+    onClick={() => {
+      const link = document.createElement("a");
+      link.href = "/nitpal-cv.pdf"; // <-- PDF location in public folder
+      link.download = "Nitpal-Choudhury-CV.pdf"; // file name
+      link.click();
+    }}
+    className="px-8 py-3 rounded-xl neon-btn btn-shine"
+  >
+    Download CV
+  </button>
 
         <button 
         onClick={() => window.location.href = "/contact"}
